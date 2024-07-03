@@ -1,0 +1,144 @@
+:root {
+  /*Kind of useless but this is just for practice */
+  --very-light-grey: rgb(246, 249, 250);
+}
+
+* {
+  font-family: lato;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  display: flex;
+  flex-direction: row;
+  height: 720px;
+  width: 1440px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.left-section {
+  background-image: url("images/tomas-malik-NsjzhdgcJxM-unsplash.jpg");
+  flex-grow: 1;
+  position: relative;
+}
+
+.odin-logo-container {
+  top: 100px;
+  position: relative;
+  width: 100%;
+  height: 140px;
+  background-color: black;
+  opacity: 30%;
+}
+
+.right-section {
+  flex-basis: 0%;
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: var(--very-light-grey);
+}
+
+.right-1,
+.right-2,
+.right-3 {
+  flex-basis: 0%;
+}
+
+.right-1 {
+  position: relative;
+  font-weight: 900;
+  padding: 20px;
+  flex-grow: 1;
+  width: auto;
+}
+
+.right-paragraph-container {
+  position: absolute;
+  bottom: 20px;
+}
+
+.right-2 {
+  padding: 20px;
+  flex-grow: 2;
+  background-color: rgb(255, 255, 255);
+  box-shadow: rgb(128 128 128/ 40%) 0px 2px 5px;
+}
+
+.form-title {
+  font-weight: 900;
+}
+
+.form-title + p {
+  font-size: 9px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.right-3 {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.submit-button {
+  background-color: rgb(60, 94, 52);
+  color: white;
+  border-radius: 10px;
+  width: 200px;
+  height: 40px;
+  font-weight: 900;
+  font-size: 16px;
+  border: 0;
+  box-shadow: rgb(128 128 128/ 40%) 0px 2px 5px;
+}
+
+form input {
+  outline: none;
+}
+
+form input:focus {
+  border: 2px solid rgb(155, 202, 211);
+  border-radius: 2px;
+}
+
+form input:invalid {
+  border: 2px solid rgb(199, 64, 64);
+}
+
+a {
+  color: rgb(60, 94, 52);
+}
