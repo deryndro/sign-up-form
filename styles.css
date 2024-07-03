@@ -58,6 +58,9 @@ li {
   height: 140px;
   background-color: black;
   opacity: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .right-section {
